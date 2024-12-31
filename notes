@@ -1,0 +1,41 @@
+# Define a function to create a DataFrame for a specific year and semester
+def create_semester_df(year, semester):
+  """
+  Creates a DataFrame with columns for subject, topic, notes, and date.
+
+  Args:
+    year: The academic year (e.g., "2023-2024").
+    semester: The semester (e.g., "Semester 1", "Semester 2").
+
+  Returns:
+    A pandas DataFrame with the specified columns.
+  """
+  df = pd.DataFrame({
+      "Subject": [],
+      "Topic": [],
+      "Notes": [],
+      "Date": []
+  })
+  return df
+
+# Create DataFrames for each year and semester
+year1_semester1_df = create_semester_df("2023-2024", "Semester 1")
+year1_semester2_df = create_semester_df("2023-2024", "Semester 2")
+year2_semester1_df = create_semester_df("2024-2025", "Semester 1")
+year2_semester2_df = create_semester_df("2024-2025", "Semester 2")
+year3_semester1_df = create_semester_df("2025-2026", "Semester 1")
+year3_semester2_df = create_semester_df("2025-2026", "Semester 2")
+
+# Print the DataFrames (for demonstration purposes)
+print("Year 1, Semester 1:")
+print(year1_semester1_df)
+print("\nYear 1, Semester 2:")
+print(year1_semester2_df)
+print("\nYear 2, Semester 1:")
+print(year2_semester1_df)
+print("\nYear 2, Semester 2:")
+print(year2_semester2_df)
+print("\nYear 3, Semester 1:")
+print(year3_semester1_df)
+print("\nYear 3, Semester 2:")
+print(year3_semester2_df)
